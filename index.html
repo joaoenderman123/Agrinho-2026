@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Sustentável</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌱 Agro Sustentável</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#dicas">Dicas</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- SOBRE -->
+        <section id="sobre" class="card">
+            <h2>O que é Agricultura Sustentável?</h2>
+
+            <p>
+                A agricultura sustentável busca produzir alimentos
+                respeitando o meio ambiente, economizando água,
+                preservando o solo e utilizando recursos naturais
+                de maneira consciente.
+            </p>
+        </section>
+
+        <!-- DICAS -->
+        <section id="dicas" class="card">
+
+            <h2>Dicas de Sustentabilidade 🌿</h2>
+
+            <div class="cards-container">
+
+                <div class="mini-card">
+                    <h3>💧 Economia de Água</h3>
+                    <p>Feche torneiras e reutilize água da chuva.</p>
+                </div>
+
+                <div class="mini-card">
+                    <h3>♻️ Reciclagem</h3>
+                    <p>Separe corretamente os materiais recicláveis.</p>
+                </div>
+
+                <div class="mini-card">
+                    <h3>🌳 Preservação</h3>
+                    <p>Evite queimadas e preserve árvores.</p>
+                </div>
+
+            </div>
+
+            <button id="btnDicas">
+                Mostrar Mais Dicas
+            </button>
+
+            <p id="maisDicas">
+                Utilize compostagem para reduzir resíduos orgânicos
+                e melhorar a qualidade do solo.
+            </p>
+
+        </section>
+
+        <!-- QUIZ -->
+        <section id="quiz" class="card">
+
+            <h2>Quiz de Sustentabilidade 🧠</h2>
+
+            <div class="question">
+
+                <p>1. Qual energia é renovável?</p>
+
+                <label>
+                    <input type="radio" name="q1" value="errado">
+                    Petróleo
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="certo">
+                    Energia Solar
+                </label>
+
+            </div>
+
+            <div class="question">
+
+                <p>2. O que ajuda a economizar água?</p>
+
+                <label>
+                    <input type="radio" name="q2" value="certo">
+                    Fechar a torneira ao escovar os dentes
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="errado">
+                    Lavar calçada com mangueira
+                </label>
+
+            </div>
+
+            <button onclick="corrigirQuiz()">
+                Ver Resultado
+            </button>
+
+            <div id="resultado"></div>
+
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato" class="card">
+
+            <h2>Contato 📩</h2>
+
+            <form id="formContato">
+
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Digite seu nome"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Digite seu email"
+                    required
+                >
+
+                <button type="submit">
+                    Enviar
+                </button>
+
+            </form>
+
+            <p id="mensagem"></p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Projeto Escolar - #agrinho 🌱</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
